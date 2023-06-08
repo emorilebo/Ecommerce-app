@@ -1,0 +1,225 @@
+body {
+  font-family: Roboto,Arial;
+  color: white;
+  padding-top: 26px;
+  font-size: 16px;
+}
+.overall-container {
+  border-left-width: 0.4rem;
+  border-left-style:solid ;
+  border-left-color:white ;
+  
+  border-right-width: 0.4rem;
+  border-right-style:solid ;
+  border-right-color:white ;
+  
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+@media (min-width:960px){
+  *{
+    font-size:16px;
+  }
+}
+img,svg{
+  vertical-align: middle;
+}
+.nav-bar-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style:solid ;
+  border-bottom-color: rgb(192,192,192);
+  padding:8px 0;
+  position: fixed;
+  background-color: black;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+@media (min-width:960px){
+  .nav-bar-container {
+    padding:15px 0;
+  }
+}
+.left-section-container {
+ display: flex;
+ align-items: center;
+}
+@media (min-width:960px){
+  .left-section-container{
+    margin: 0 20px;
+  }
+}
+.nav-icon {
+  font-family: Roboto,Arial;
+  margin-left: 10px;
+  text-decoration: none;
+  font-size:1.8rem;
+color:#82888a ;
+}
+@media (min-width:960px){
+  .nav-icon {
+    font-size: 2.8rem;
+  }
+}
+.middle-section-container{
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  margin-left:15px ;
+  margin-right:10px;
+  max-width: 400px;
+}
+@media (min-width:960px){
+  .middle-section-container{
+    margin: 0 10px;
+  }
+}
+.search-bar {
+flex: 1 1 0%;
+height:35px;
+font-size: 16px;
+padding-left:12px ;
+padding-right:6px;
+border-width:1px;
+border-style: solid;
+border-radius:3px;
+border-color:rgb(192,192,192);
+box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+width:0px;
+}
+.search-bar::placeholder {
+  font-family: Roboto,Arial;
+  font-size:0.9rem;
+}
+@media (min-width:960px){
+.search-bar::placeholder {
+  font-family: Roboto,Arial;
+  font-size:1rem;
+  padding-top:1rem;
+}
+}
+.search-btn {
+  font-size: Roboto,Arial;
+  font-size: 1.1rem;
+  font-weight:500;
+  position: relative;
+  color:#82888a ;
+  background-color: rgb(240,240,240);
+  border:1px solid rgb(192,192,192);
+  margin-left:-1px;
+  margin-right:8px;
+  border-radius:3px;
+  padding:6.7px 8px;
+}
+
+.right-section-container {
+}
+@media (min-width:960px){
+  .right-section-container{
+    margin: 0 20px;
+  }
+}
+.hamburger-box {
+  display: flex;
+  align-items: center;
+}
+@media (min-width:970px){
+.hamburger-box {
+  display: none;
+}
+}
+.hamburger-menu {
+  width:30px;
+  height:35px;
+  background-color:white;
+  margin-right:16px;
+  border-radius:5px;
+  cursor: pointer;
+color:#82888a ;
+}
+.nav-bar-nav {
+list-style-type: none;
+display: flex;
+}
+@media (max-width:760px){
+  .nav-bar-nav{
+    display: none;
+  }
+}
+.nav-link {
+ display: inline-block;
+color:#82888a ;
+text-decoration: none;
+font-size: 1.8rem;
+}
+.nav-link-1,
+.nav-link-2{
+  list-style-type: none;
+  margin: 0 10px;
+  font-size:3rem;
+}
+.search-btn div,
+.nav-link-1 div,
+ .nav-link-2 div {
+  font-size: 14px;
+  position:absolute;
+  bottom:-25px;
+  background-color:#82888a ;
+  color:white;
+  padding:3px 6px 3px 6px;
+  border: none;
+  border-radius:1px;
+  font-family: Roboto, Arial;
+  opacity:0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+ }
+ @media (min-width:960px){
+.search-btn div,
+.nav-link-1 div,
+ .nav-link-2 div {
+   bottom:-50;
+   padding:6px 15px ;
+ }
+ }
+.nav-link-1 div,
+ .nav-link-2 div {
+   bottom: -20px;
+ }
+.search-btn:hover div,
+.nav-link-1:hover div,
+ .nav-link-2:hover div{
+   opacity: 1;
+ }
+/* main category **/
+main{
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('fruits-on-table.jpg');
+background-size: cover;
+background-attachment:fixed;
+background-position: center center;
+background-repeat: no-repeat;
+width: 100%;
+height: auto;
+ padding-top:10px;
+}
+.main-category {
+  
+}
+.fruit-container {
+}
+.fruit-img{
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  background-size: container;
+}
